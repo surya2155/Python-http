@@ -21,9 +21,3 @@ def api_all():
 
 
 app.run()
-
-
-class TestViews(TestCase):
-    def test_some_json(self):
-        response = self.client.get("/hello")
-        self.assertEquals(response.json, dict(success=True))
