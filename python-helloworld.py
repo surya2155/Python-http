@@ -1,5 +1,7 @@
 import flask
 from flask import request, jsonify
+from flask import Flask
+from flask_testing import LiveServerTestCase
 
 app = flask.Flask(__name__)
 app.config["DEBUG"] = True
@@ -19,3 +21,9 @@ def api_all():
 
 
 app.run()
+
+
+class TestViews(TestCase):
+    def test_some_json(self):
+        response = self.client.get("/hello")
+        self.assertEquals(response.json, dict(success=True))
