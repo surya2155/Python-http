@@ -13,4 +13,4 @@ python:
 install:
   - pip install -r requirements.txt
 script:
-  - python -m test-helloworld.py -v
+  - python test-helloworld.py

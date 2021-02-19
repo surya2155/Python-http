@@ -19,5 +19,5 @@ def home():
 def api_all():
     return jsonify(hello_world)
 
-
-app.run()
+if __name__ == '__main__':
+    app.run()
