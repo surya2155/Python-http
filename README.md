@@ -1,7 +1,7 @@
 # Python-http
 This is the docker based python flask application which responds with JSON and http 200 for the request.
 
-Release Branch contains the Python-flask code which will build an application accepting the http requests to /hello endpoint.
+Branch with name "Release" contains the Python-flask code which will build an application accepting the http requests to /hello endpoint.
 
 test-*.py: contains basic unit tests that will check for the proper Http 200 response from the web application.
 
